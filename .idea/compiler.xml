@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-bless-web-hystrix-dashboard" />
+        <module name="cloud-bless-server-config" />
+        <module name="cloud-bless-service-user" />
+        <module name="cloud-bless-service-zuul" />
+        <module name="cloud-bless-service-video" />
+        <module name="cloud-bless-web-app" />
+        <module name="cloud-bless-service-music" />
+        <module name="cloud-bless-server-eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="9">
+      <module name="cloud-bless-server-config" target="1.8" />
+      <module name="cloud-bless-server-eureka" target="1.8" />
+      <module name="cloud-bless-service-common" target="1.8" />
+      <module name="cloud-bless-service-music" target="1.8" />
+      <module name="cloud-bless-service-user" target="1.8" />
+      <module name="cloud-bless-service-video" target="1.8" />
+      <module name="cloud-bless-service-zuul" target="1.8" />
+      <module name="cloud-bless-web-app" target="1.8" />
+      <module name="cloud-bless-web-hystrix-dashboard" target="1.8" />
+      <module name="cloud-spring-bless" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-bless-server-config" options="-nowarn" />
+      <module name="cloud-bless-server-eureka" options="-nowarn" />
+      <module name="cloud-bless-service-common" options="-nowarn" />
+      <module name="cloud-bless-service-music" options="-nowarn" />
+      <module name="cloud-bless-service-user" options="-nowarn" />
+      <module name="cloud-bless-service-video" options="-nowarn" />
+      <module name="cloud-bless-service-zuul" options="-nowarn" />
+      <module name="cloud-bless-web-app" options="-nowarn" />
+      <module name="cloud-bless-web-hystrix-dashboard" options="-nowarn" />
+    </option>
+  </component>
+</project>

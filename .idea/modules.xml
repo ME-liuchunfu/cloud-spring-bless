@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-bless-server-config/cloud-bless-server-config.iml" filepath="$PROJECT_DIR$/cloud-bless-server-config/cloud-bless-server-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-bless-server-eureka/cloud-bless-server-eureka.iml" filepath="$PROJECT_DIR$/cloud-bless-server-eureka/cloud-bless-server-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-bless-service-music/cloud-bless-service-music.iml" filepath="$PROJECT_DIR$/cloud-bless-service-music/cloud-bless-service-music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-bless-service-user/cloud-bless-service-user.iml" filepath="$PROJECT_DIR$/cloud-bless-service-user/cloud-bless-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-bless-service-video/cloud-bless-service-video.iml" filepath="$PROJECT_DIR$/cloud-bless-service-video/cloud-bless-service-video.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-bless-service-zuul/cloud-bless-service-zuul.iml" filepath="$PROJECT_DIR$/cloud-bless-service-zuul/cloud-bless-service-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-bless-web-app/cloud-bless-web-app.iml" filepath="$PROJECT_DIR$/cloud-bless-web-app/cloud-bless-web-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/cloud-bless-web-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/cloud-bless-web-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-spring-bless.iml" filepath="$PROJECT_DIR$/cloud-spring-bless.iml" />
+    </modules>
+  </component>
+</project>
