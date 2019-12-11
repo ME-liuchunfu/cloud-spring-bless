@@ -1,6 +1,6 @@
 <br/>
 
- **项目wiki文档 [https://gitee.com/zhoubang85/sea-springcloud/wikis/pages](https://gitee.com/zhoubang85/sea-springcloud/wikis/pages)** 
+ **项目wiki文档** 
 
 
 #### springcloud全家桶
@@ -22,8 +22,8 @@
 #### 项目启动
 ##### 1、前期准备
 - 首先在本地电脑的host文件中，配置好虚拟域名；
-> 虚拟域名需要与sea-server-eureka、sea-service-user、cloud-bless-web-app中application.yml中配置的eureka.client.service-url.defaultZone的域名一致；
- 
+> 虚拟域名需要与cloud-bless-server-eureka、cloud-bless-service-user、cloud-bless-web-app中application.yml中配置的eureka.client.service-url.defaultZone的域名一致；
+
 我本地host文件中的配置如下（注意中间空格）：
 ```
 127.0.0.1 server.eureka.slave1.com server.eureka.slave2.com
@@ -39,42 +39,60 @@ rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安�
 - idea 2017.3
 
 ##### 3、服务启动
-1、启动eureka注册中心 - 运行\sea-server-eureka\src\main\java\pers\zb\server\eureka\EurekaServer.java 中的main方法
+1、启动eureka注册中心 - 运行\cloud-bless-server-eureka下的EurekaServer.java 中的main方法
 ```
 （建议运行至少2个eureka服务器节点，方可看到高可用集群效果）
 ```
 <br/>
 
-2、启动config配置中心 - 运行\sea-server-config\src\main\java\pers\zb\server\config\ConfigApplication.java 中的main方法
+2、启动config配置中心 - 运行\cloud-bless-server-config下的ConfigApplication.java 中的main方法
+
 ```
 （建议运行至少2个config配置中心节点，方可看到高可用集群效果）
 ```
 <br/>
 
-3、启动zuul服务网关 - 运行\sea-service-zuul\src\main\java\pers\zb\service\zuul\ZuulApplication.java 中的main方法
+3、启动zuul服务网关 - 运行\cloud-bless-service-zuul下的ZuulApplication.java 中的main方法
+
 ```
 （建议运行至少2个zuul服务网关节点，方可看到高可用集群效果）
 ```
 <br/>
 
-4、启动hystrix dashboard仪表盘服务 - 运行\sea-web-hystrix-dashboard\src\main\java\pers\zb\web\hystrix\dashboard\HystrixDashboardApplication.java 中的main方法
+4、启动hystrix dashboard仪表盘服务 - 运行\cloud-bless-web-hystrix-dashboard下的HystrixDashboardApplication.java 中的main方法
 
 <br/>
 
-5、启动user服务 - 运行\sea-service-user\src\main\java\pers\zb\service\user\UserServiceApplication.java 中的main方法
+5、启动user服务 - 运行\cloud-bless-service-user下的UserServiceApplication.java 中的main方法
+
 ```
 （建议运行至少2个user服务节点，方可看到高可用集群效果）
 ```
 <br/>
 
-6、启动shop应用 - 运行\cloud-bless-web-app\src\main\java\xin\spring\bless\cloud\bless\web\app\ShopApplication.java 中的main方法
+6、启动music服务 - 运行\cloud-bless-service-music下的MusicServiceApplication.java 中的main方法
+
 ```
-（建议运行至少2个shop应用节点，方可看到高可用集群效果）
+（建议运行至少2个music服务节点，方可看到高可用集群效果）
+```
+<br/>
+
+7、启动video服务 - 运行\cloud-bless-service-video下的VideoServiceApplication.java 中的main方法
+
+```
+（建议运行至少2个video服务节点，方可看到高可用集群效果）
+```
+<br/>
+
+8、启动shop应用 - 运行\cloud-bless-web-app下的WebApplication.java 中的main方法
+
+```
+（建议运行至少2个app应用节点，方可看到高可用集群效果）
 ```
 <br/>
 
 #### 打开eureka控制台，查看各服务的集群信息
-- 根据在\sea-server-eureka\src\main\resources\application.yml中配置的eureka服务器的地址，在浏览器中输入：
+- 根据在\cloud-bless-server-eureka\src\main\resources\application.yml中配置的eureka服务器的地址，在浏览器中输入：
 <br/>http://127.0.0.1:18761 或者 http://127.0.0.1:28761 即可进入eureka控制台（其中，18761和28761代表不同的eureka服务器的端口号）
 
 - eureka控制台截图
@@ -90,12 +108,12 @@ rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安�
  -  **通过zuul服务网关访问shop应用**
  > http://127.0.0.1:(zuul服务网关的端口号)/api-shop/router
 ```
-最终效果与上面的直接访问shop的效果是一样的，主要区别就是访问路径发生了变化。被zuul网关拦截处理，再进行转发请求shop应用。具体zuul配置请查看 \sea-service-zuul\src\main\resources\application.yml
+最终效果与上面的直接访问shop的效果是一样的，主要区别就是访问路径发生了变化。被zuul网关拦截处理，再进行转发请求shop应用。具体zuul配置请查看 \cloud-bless-service-zuul\src\main\resources\application.yml
 ```
  -  **修改git仓库配置文件属性值，实现动态刷新spring bean属性**
-> git使用的是我的码云的项目 https://gitee.com/zhoubang85/springcloud-config-test
+> git使用的是我的码云的项目 https://github.com/ME-liuchunfu/cloud-spring-bless.git 
 
-> 具体需要测试的地方在 \cloud-bless-web-app\src\main\java\xin\spring\bless\cloud\bless\web\app\controller\ShopController.java中的@Value("${message}")<br/><br/>
+> 具体需要测试的地方在 \cloud-bless-web-app\src\main\java\xin\spring\bless\cloud\bless\web\app\controller\WebController.java中的@Value("${message}")<br/><br/>
 > 这个message的值是shop应用启动的时候从config配置中心获取的，而配置中心是从git远程仓库获取的<br/><br/>
 > 当git仓库的配置文件属性值发生了变化后，要想让shop应用在不需要重启的状态下，动态刷新@Value("${message}")的值，就需要结合Bus消息总线来实现<br/><br/>
 > 故：本地需要提前安装好rabbitmq，这里就不演示如何安装了，请自行解决<br/><br/>
@@ -108,7 +126,7 @@ rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安�
 <br/><br/>5、在shop应用不重启的情况下，浏览器再次访问http://localhost:(shop应用的端口号)/config/hello ，这时候你就会发现，显示的内容已经是git仓库最新值
 
  -  **Turbine聚合监控**
-> 当前项目都是集群环境，所以我们采用Turbine实现服务的监控；至于如何配置实现的，请查看\cloud-bless-web-app\pom.xml与\sea-web-hystrix-dashboard\pom.xml中的相关依赖配置，以及启动类的注解配置。
+> 当前项目都是集群环境，所以我们采用Turbine实现服务的监控；至于如何配置实现的，请查看\cloud-bless-web-app\pom.xml与\cloud-bless-web-hystrix-dashboard\pom.xml中的相关依赖配置，以及启动类的注解配置。
 > 访问仪表盘，查看服务运行状态：<br/><br/>
 > 1、浏览器访问http://localhost:2001/hystrix ，会进入Hystrix Dashboard界面；其中的2001是hystrix-dashboard应用的端口号<br/><br/>
 > 2、在文本框中输入要监控的服务地址http://localhost:(shop应用的端口号)/turbine.stream ，这里我们就监控shop应用，在title文本框中随意输入名称即可，然后点击Monitor Stream按钮进入监控后台页面<br/><br/>

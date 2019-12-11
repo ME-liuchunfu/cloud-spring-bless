@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b5cd839-4322-4001-96e2-3c2e9a39b2f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_1_4_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_1_4_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_1_4_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_1_4_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zuul_1_4_4_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-server-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-server-config/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/xin/spring/bless/cloud/bless/service/music/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/xin/spring/bless/cloud/bless/service/music/controller/MusicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/src/main/java/xin/spring/bless/cloud/bless/service/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-service-user/src/main/java/xin/spring/bless/cloud/bless/service/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/entity/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/entity/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/xin/spring/bless/cloud/bless/service/video/controller/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/xin/spring/bless/cloud/bless/service/video/controller/VideoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-web-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/WebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/controller/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/controller/WebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/cloud-bless-web-hystrix-dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/cloud-bless-web-hystrix-dashboard.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/sea-web-hystrix-dashboard.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/src/main/java/xin/spring/bless/cloud/bless/web/hystrix/dashboard/HystrixDashboardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/src/main/java/xin/spring/bless/cloud/bless/web/hystrix/dashboard/HystrixDashboardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/controller/UserController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.HystrixDashboardApplication">
+  <component name="RunManager" selected="Spring Boot.WebApplication">
     <configuration name="HystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-bless-web-hystrix-dashboard" />
       <extension name="coverage">
@@ -179,7 +162,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="xin.spring.bless.cloud.bless.web.app.WebApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,11 +175,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.HystrixDashboardApplication" />
         <item itemvalue="Spring Boot.WebApplication" />
-        <item itemvalue="Spring Boot.MusicServiceApplication" />
         <item itemvalue="Spring Boot.VideoServiceApplication" />
+        <item itemvalue="Spring Boot.MusicServiceApplication" />
         <item itemvalue="Spring Boot.UserServiceApplication" />
+        <item itemvalue="Spring Boot.HystrixDashboardApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -219,8 +201,16 @@
       <workItem from="1576027301264" duration="14891000" />
       <workItem from="1576056792463" duration="18000" />
       <workItem from="1576056822007" duration="1824000" />
-      <workItem from="1576075628224" duration="3765000" />
+      <workItem from="1576075628224" duration="8756000" />
     </task>
+    <task id="LOCAL-00001" summary="修改bug + 新增sql">
+      <created>1576079504101</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576079504101</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +228,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改bug + 新增sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改bug + 新增sql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
