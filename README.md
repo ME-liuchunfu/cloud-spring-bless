@@ -131,7 +131,7 @@ rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安�
 > 1、浏览器访问http://localhost:2001/hystrix ，会进入Hystrix Dashboard界面；其中的2001是hystrix-dashboard应用的端口号<br/><br/>
 > 2、在文本框中输入要监控的服务地址http://localhost:(shop应用的端口号)/turbine.stream ，这里我们就监控shop应用，在title文本框中随意输入名称即可，然后点击Monitor Stream按钮进入监控后台页面<br/><br/>
 > 3、监控效果截图：<br/>
-![Hystrix Dashboard监控仪表盘](https://gitee.com/uploads/images/2018/0323/044320_5e55e8e7_341760.jpeg "Hystrix Dashboard监控仪表盘.jpg")
+![Hystrix Dashboard监控仪表盘](./044320_5e55e8e7_341760.jpeg "Hystrix Dashboard监控仪表盘.jpg")
 
 > 至于监控仪表的内容都是什么含义，请自行网上查找资料
 
@@ -145,13 +145,10 @@ rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安�
 > - 然后等eureka注册中心剔除这个down掉的user节点后，再重新访问/router方法，你会发现一直返回的是正常的JSON数据，不再出现“hystrix断路器生效了...”的字样，毕竟还有一个user节点是可用状态的。<br/>
 
 > 断路器效果：<br/>
-![Hystrix断路器效果](https://gitee.com/uploads/images/2018/0323/044340_55bc14d8_341760.jpeg "Hystrix断路器效果.jpg")
+![Hystrix断路器效果](./044340_55bc14d8_341760.jpeg "Hystrix断路器效果.jpg")
 
 > 具体的断路器代码处理，请查看\cloud-bless-web-app\src\main\java\xin\spring\bless\cloud\bless\web\app\service\UserServiceFeign.java与UserServiceHystrix.java的相关注解，以及main启动类的相关注解
 
-#### 《发行版》板块的说明
-《发行版》板块中的内容，是一些细化的springcloud技术的案例，方便大家的学习；在不同版本中，都是独立的技术，需要学习什么技术的，可以按照需要下载对应的案例源码；
-详细的内容，请看当前项目上面菜单栏中的《发行版》。
 
 #### 项目动态
 > 目前项目中只有这几样技术内容，涉及到多数springcloud的技术，后面会根据自己所学，一点点的积累，基础学习之后再进行深入的研究学习，并在项目中更新并分享给大家。

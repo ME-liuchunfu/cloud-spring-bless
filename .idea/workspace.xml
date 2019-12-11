@@ -2,9 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b5cd839-4322-4001-96e2-3c2e9a39b2f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-server-config/target/classes/xin/spring/bless/cloud/bless/server/config/ConfigApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-server-eureka/target/classes/xin/spring/bless/cloud/bless/server/eureka/EurekaServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/META-INF/cloud-bless-service-music.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/xin/spring/bless/cloud/bless/service/music/MusicServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/xin/spring/bless/cloud/bless/service/music/config/JpaConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/xin/spring/bless/cloud/bless/service/music/config/WebApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/xin/spring/bless/cloud/bless/service/music/controller/MusicController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/xin/spring/bless/cloud/bless/service/music/dao/MusicRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-music/target/classes/xin/spring/bless/cloud/bless/service/music/entity/Music.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/UserServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/config/JpaConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/config/WebApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/dao/PersonRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-user/target/classes/xin/spring/bless/cloud/bless/service/user/entity/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/META-INF/cloud-bless-service-video.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/xin/spring/bless/cloud/bless/service/video/VideoServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/xin/spring/bless/cloud/bless/service/video/config/JpaConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/xin/spring/bless/cloud/bless/service/video/config/WebApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/xin/spring/bless/cloud/bless/service/video/controller/VideoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/xin/spring/bless/cloud/bless/service/video/dao/VideoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-video/target/classes/xin/spring/bless/cloud/bless/service/video/entity/Video.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-zuul/target/classes/xin/spring/bless/cloud/bless/service/zuul/ZuulApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-service-zuul/target/classes/xin/spring/bless/cloud/bless/service/zuul/filter/MyZuulFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/WebApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/controller/WebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/service/MusicServiceFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/service/UserServiceFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/service/VideoServiceFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/service/hystrix/MusicServiceHystrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/service/hystrix/UserServiceHystrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/service/hystrix/VideoServiceHystrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-app/target/classes/xin/spring/bless/cloud/bless/web/app/util/Constrant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-bless-web-hystrix-dashboard/target/classes/xin/spring/bless/cloud/bless/web/hystrix/dashboard/HystrixDashboardApplication.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +235,10 @@
       <workItem from="1576027301264" duration="14891000" />
       <workItem from="1576056792463" duration="18000" />
       <workItem from="1576056822007" duration="1824000" />
-      <workItem from="1576075628224" duration="8756000" />
+      <workItem from="1576075628224" duration="8927000" />
+      <workItem from="1576087718096" duration="97000" />
+      <workItem from="1576087829008" duration="12000" />
+      <workItem from="1576087844407" duration="241000" />
     </task>
     <task id="LOCAL-00001" summary="修改bug + 新增sql">
       <created>1576079504101</created>
@@ -210,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576079504101</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成设计">
+      <created>1576087389232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576087389233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +275,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改bug + 新增sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改bug + 新增sql" />
+    <MESSAGE value="完成设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成设计" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
