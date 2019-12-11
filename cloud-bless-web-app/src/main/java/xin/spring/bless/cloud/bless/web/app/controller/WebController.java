@@ -1,7 +1,6 @@
 package xin.spring.bless.cloud.bless.web.app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -80,20 +79,4 @@ public class WebController {
     }
     // ============== 视频 =============
 
-
-    /**
-     * 从配置中心获取的值，其中foo为配置文件中的key。
-     *      当前配置中心就采用我的码云上的测试项目 https://gitee.com/zhoubang85/springcloud-config-test.git
-     */
-    @Value("${message}")
-    private String message;
-
-    /**
-     * 提供一个测试方法
-     * @return
-     */
-    @RequestMapping(value = "/config/hello")
-    public String hello(){
-        return message;
-    }
 }

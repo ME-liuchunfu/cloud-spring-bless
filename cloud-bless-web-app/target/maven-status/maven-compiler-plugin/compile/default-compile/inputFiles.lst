@@ -1,0 +1,9 @@
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/service/MusicServiceFeign.java
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/service/hystrix/UserServiceHystrix.java
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/service/hystrix/VideoServiceHystrix.java
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/controller/WebController.java
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/service/hystrix/MusicServiceHystrix.java
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/service/UserServiceFeign.java
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/util/Constrant.java
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/service/VideoServiceFeign.java
+/Users/mac/Desktop/cloud-spring-bless/cloud-bless-web-app/src/main/java/xin/spring/bless/cloud/bless/web/app/WebApplication.java

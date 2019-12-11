@@ -55,7 +55,7 @@ public class UserController {
         return person;
     }
 
-    @RequestMapping("/getOne/{id}")
+    @RequestMapping("/user/{id}")
     public Person getOne(@PathVariable("id") Integer id){
         Person person = personRepository.getOne(id);
         return person;

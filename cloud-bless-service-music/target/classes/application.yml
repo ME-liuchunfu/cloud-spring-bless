@@ -1,6 +1,6 @@
 spring:
   application:
-    # 具体代码调用，请看 \sea-web-shop\src\main\java\pers\zb\web\shop\controller\ShopController.java 中的router方法；
+    # 具体代码调用，请看 \cloud-bless-web-app\src\main\java\xin\spring\bless\cloud\bless\web\app\controller\ShopController.java 中的router方法；
     name: cloud-bless-service-music # 服务提供者的应用服务名称（服务调用者是通过调用此服务名（cloud-bless-service-music）来实现服务调用的，与域名和端口号没有关系了）
 
 eureka:

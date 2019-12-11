@@ -1,0 +1,9 @@
+xin/spring/bless/cloud/bless/web/app/service/UserServiceFeign.class
+xin/spring/bless/cloud/bless/web/app/WebApplication.class
+xin/spring/bless/cloud/bless/web/app/service/MusicServiceFeign.class
+xin/spring/bless/cloud/bless/web/app/service/VideoServiceFeign.class
+xin/spring/bless/cloud/bless/web/app/util/Constrant.class
+xin/spring/bless/cloud/bless/web/app/service/hystrix/MusicServiceHystrix.class
+xin/spring/bless/cloud/bless/web/app/service/hystrix/UserServiceHystrix.class
+xin/spring/bless/cloud/bless/web/app/controller/WebController.class
+xin/spring/bless/cloud/bless/web/app/service/hystrix/VideoServiceHystrix.class

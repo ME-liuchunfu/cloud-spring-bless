@@ -12,7 +12,7 @@
     </parent>
 
     <groupId>xin.spring.bless.cloud.bless</groupId>
-    <artifactId>cloud-bless-web-shop</artifactId>
+    <artifactId>cloud-bless-web-app</artifactId>
     <version>${project.parent.version}</version>
 
     <dependencies>
