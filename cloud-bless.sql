@@ -11,7 +11,7 @@
  Target Server Version : 80018
  File Encoding         : 65001
 
- Date: 11/12/2019 23:49:54
+ Date: 13/12/2019 00:05:25
 */
 
 SET NAMES utf8mb4;
@@ -45,16 +45,23 @@ COMMIT;
 DROP TABLE IF EXISTS `tb_person`;
 CREATE TABLE `tb_person` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) DEFAULT NULL,
+  `mail` varchar(255) DEFAULT NULL,
   `msg` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tb_person
 -- ----------------------------
 BEGIN;
-INSERT INTO `tb_person` VALUES (1, '张三', '张三跑了');
+INSERT INTO `tb_person` VALUES (1, '429829320@qq.com', 'http://47.103.144.95:89/storage/2019-11-09/0l6wrjl9pezgfwrtvz8h.jpg', 'spring', '123');
+INSERT INTO `tb_person` VALUES (10, '347685543@qq.com', 'http://47.103.144.95:89/storage/2019-11-09/0l6wrjl9pezgfwrtvz8h.jpg', 'xiaoxiang', '123456');
+INSERT INTO `tb_person` VALUES (11, '347685543@qq.com', 'http://47.103.144.95:89/storage/2019-11-09/0l6wrjl9pezgfwrtvz8h.jpg', 'xiaoxiang', '123456');
+INSERT INTO `tb_person` VALUES (12, '347685543@qq.com', 'http://47.103.144.95:89/storage/2019-11-09/0l6wrjl9pezgfwrtvz8h.jpg', 'xi', '123456');
+INSERT INTO `tb_person` VALUES (13, '347685543@qq.com', 'http://47.103.144.95:89/storage/2019-11-09/0l6wrjl9pezgfwrtvz8h.jpg', '小明', '123456');
+INSERT INTO `tb_person` VALUES (14, '347685543@qq.com', 'http://47.103.144.95:89/storage/2019-11-09/0l6wrjl9pezgfwrtvz8h.jpg', '彭于晏', '123456');
 COMMIT;
 
 -- ----------------------------

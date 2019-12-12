@@ -4,6 +4,7 @@ package xin.spring.bless.cloud.bless.web.app.service;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import xin.spring.bless.cloud.bless.web.app.service.hystrix.VideoServiceHystrix;
 
 /**
@@ -30,4 +31,11 @@ public interface VideoServiceFeign {
     @RequestMapping(value = "/getAll")
     String getVideoList();
 
+    /**
+     * 保存
+     * @param data
+     * @return
+     */
+    @RequestMapping("/video/save")
+    String save(@RequestParam("data")String data);
 }

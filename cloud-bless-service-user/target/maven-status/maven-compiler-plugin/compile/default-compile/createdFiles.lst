@@ -1,0 +1,6 @@
+xin/spring/bless/cloud/bless/service/user/entity/Person.class
+xin/spring/bless/cloud/bless/service/user/controller/UserController.class
+xin/spring/bless/cloud/bless/service/user/config/JpaConfiguration.class
+xin/spring/bless/cloud/bless/service/user/UserServiceApplication.class
+xin/spring/bless/cloud/bless/service/user/config/WebApplicationConfig.class
+xin/spring/bless/cloud/bless/service/user/dao/PersonRepository.class

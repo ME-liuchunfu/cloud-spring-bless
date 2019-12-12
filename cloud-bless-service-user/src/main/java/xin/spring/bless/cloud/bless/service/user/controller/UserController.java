@@ -1,5 +1,6 @@
 package xin.spring.bless.cloud.bless.service.user.controller;
 
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -65,6 +66,26 @@ public class UserController {
     public List<Person> getPersons(){
         List<Person> all = personRepository.findAll();
         return all;
+    }
+
+    @RequestMapping("/user/login/{mail}/{password}")
+    public Person login(@PathVariable("mail") String mail, @PathVariable("password") String password){
+        Person person = personRepository.findByMail(mail);
+        if(person != null){
+            if(!person.getPassword().equals(password)){
+                person = null;
+            }
+        }else{
+            person = null;
+        }
+        return person;
+    }
+
+    @RequestMapping(value = "/user/save",produces = MediaType.APPLICATION_JSON_VALUE)
+    public Person save(String data){
+        Person person = new Gson().fromJson(data, Person.class);
+        personRepository.save(person);
+        return person;
     }
 
 }

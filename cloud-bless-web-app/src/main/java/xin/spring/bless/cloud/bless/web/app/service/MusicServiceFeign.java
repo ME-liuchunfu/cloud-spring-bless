@@ -4,6 +4,7 @@ package xin.spring.bless.cloud.bless.web.app.service;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import xin.spring.bless.cloud.bless.web.app.service.hystrix.MusicServiceHystrix;
 
 /**
@@ -30,4 +31,11 @@ public interface MusicServiceFeign {
     @RequestMapping(value = "/getAll")
     String getMusicList();
 
+    /**
+     * 保存
+     * @param data
+     * @return
+     */
+    @RequestMapping("/music/save")
+    String save(@RequestParam("data")String data);
 }

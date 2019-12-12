@@ -20,4 +20,9 @@ public class MusicServiceHystrix implements MusicServiceFeign {
     public String getMusicList() {
         return Constrant.ERROR_STRING;
     }
+
+    @Override
+    public String save(String data) {
+        return Constrant.ERROR_STRING;
+    }
 }

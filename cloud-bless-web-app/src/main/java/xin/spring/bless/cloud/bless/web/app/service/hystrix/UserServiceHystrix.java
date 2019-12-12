@@ -27,4 +27,20 @@ public class UserServiceHystrix implements UserServiceFeign{
     public String getAllList() {
         return Constrant.ERROR_STRING;
     }
+
+    @Override
+    public String login(String mail, String password) {
+        return Constrant.ERROR_STRING;
+    }
+
+    @Override
+    public String save(String data) {
+        return Constrant.ERROR_STRING;
+    }
+
+//    @Override
+//    public String save(String mail, String msg, String name, String password) {
+//        return Constrant.ERROR_STRING;
+//    }
+
 }

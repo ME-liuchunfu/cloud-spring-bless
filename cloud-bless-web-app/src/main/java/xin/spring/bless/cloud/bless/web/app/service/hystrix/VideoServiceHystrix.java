@@ -20,4 +20,9 @@ public class VideoServiceHystrix implements VideoServiceFeign {
         return Constrant.ERROR_STRING;
     }
 
+    @Override
+    public String save(String data) {
+        return Constrant.ERROR_STRING;
+    }
+
 }

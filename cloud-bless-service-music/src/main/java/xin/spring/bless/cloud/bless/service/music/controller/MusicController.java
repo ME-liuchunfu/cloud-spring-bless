@@ -1,6 +1,8 @@
 package xin.spring.bless.cloud.bless.service.music.controller;
 
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,6 +39,18 @@ public class MusicController {
     public List<Music> getListAll(){
         List<Music> all = musicRepository.findAll();
         return all;
+    }
+
+    /**
+     * 保存
+     * @param data
+     * @return
+     */
+    @RequestMapping(value = "/music/save",produces = MediaType.APPLICATION_JSON_VALUE)
+    public Music save(String data){
+        Music music = new Gson().fromJson(data, Music.class);
+        musicRepository.save(music);
+        return music;
     }
 
 }

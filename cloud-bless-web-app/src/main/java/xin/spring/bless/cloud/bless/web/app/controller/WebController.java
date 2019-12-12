@@ -45,6 +45,18 @@ public class WebController {
         String result = userServiceFeign.getAllList();
         return result;
     }
+
+    @RequestMapping("/user/login/{mail}/{password}")
+    public String login(@PathVariable("mail") String mail, @PathVariable("password") String password){
+        String result = userServiceFeign.login(mail, password);
+        return result;
+    }
+
+    @RequestMapping(value = "/user/save",produces = MediaType.APPLICATION_JSON_VALUE)
+    public String saveUser(String data){
+        String result = userServiceFeign.save(data);
+        return result;
+    }
     // ============== 用户 =============
 
 
@@ -61,6 +73,12 @@ public class WebController {
         String result = musicServiceFeign.getMusicList();
         return result;
     }
+
+    @RequestMapping(value = "/music/save",produces = MediaType.APPLICATION_JSON_VALUE)
+    public String saveMusic(String data){
+        String result = musicServiceFeign.save(data);
+        return result;
+    }
     // ============== 音乐 =============
 
 
@@ -75,6 +93,12 @@ public class WebController {
     @RequestMapping(value = "/getVideos")
     public String getVideoAll(){
         String result = videoServiceFeign.getVideoList();
+        return result;
+    }
+
+    @RequestMapping(value = "/video/save",produces = MediaType.APPLICATION_JSON_VALUE)
+    public String saveVideo(String data){
+        String result = videoServiceFeign.save(data);
         return result;
     }
     // ============== 视频 =============

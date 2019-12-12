@@ -4,6 +4,7 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import xin.spring.bless.cloud.bless.web.app.service.hystrix.UserServiceHystrix;
 
 /**
@@ -30,4 +31,23 @@ public interface UserServiceFeign {
     @RequestMapping(value = "/getAll")
     String getAllList();
 
+    /**
+     * 登录
+     * @param mail
+     * @param password
+     * @return
+     */
+    @RequestMapping("/user/login/{mail}/{password}")
+    String login(@PathVariable("mail") String mail, @PathVariable("password") String password);
+
+    /**
+     * 新增用户
+     * @param data
+     * @return
+     */
+    @RequestMapping("/user/save")
+    String save(@RequestParam("data") String data);
+//    @RequestMapping("/user/save/{mail}/{msg}/{name}/{password}")
+//    String save(@PathVariable("mail")String mail, @PathVariable("msg")String msg,
+//                @PathVariable("name")String name, @PathVariable("password")String password);
 }

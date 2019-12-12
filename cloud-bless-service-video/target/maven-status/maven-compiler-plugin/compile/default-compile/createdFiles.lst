@@ -1,0 +1,6 @@
+xin/spring/bless/cloud/bless/service/video/controller/VideoController.class
+xin/spring/bless/cloud/bless/service/video/config/JpaConfiguration.class
+xin/spring/bless/cloud/bless/service/video/entity/Video.class
+xin/spring/bless/cloud/bless/service/video/VideoServiceApplication.class
+xin/spring/bless/cloud/bless/service/video/config/WebApplicationConfig.class
+xin/spring/bless/cloud/bless/service/video/dao/VideoRepository.class

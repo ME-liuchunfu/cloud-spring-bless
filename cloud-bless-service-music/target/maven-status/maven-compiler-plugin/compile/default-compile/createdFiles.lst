@@ -1,0 +1,6 @@
+xin/spring/bless/cloud/bless/service/music/entity/Music.class
+xin/spring/bless/cloud/bless/service/music/MusicServiceApplication.class
+xin/spring/bless/cloud/bless/service/music/config/WebApplicationConfig.class
+xin/spring/bless/cloud/bless/service/music/dao/MusicRepository.class
+xin/spring/bless/cloud/bless/service/music/config/JpaConfiguration.class
+xin/spring/bless/cloud/bless/service/music/controller/MusicController.class

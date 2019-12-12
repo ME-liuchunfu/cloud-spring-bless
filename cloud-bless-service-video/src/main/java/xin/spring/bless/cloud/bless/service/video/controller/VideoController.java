@@ -1,6 +1,8 @@
 package xin.spring.bless.cloud.bless.service.video.controller;
 
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,6 +39,18 @@ public class VideoController {
     public List<Video> getListAll(){
         List<Video> all = videoRepository.findAll();
         return all;
+    }
+
+    /**
+     * 保存
+     * @param data
+     * @return
+     */
+    @RequestMapping(value = "/video/save",produces = MediaType.APPLICATION_JSON_VALUE)
+    public Video save(String data){
+        Video video = new Gson().fromJson(data, Video.class);
+        videoRepository.save(video);
+        return video;
     }
 
 }

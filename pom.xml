@@ -45,6 +45,15 @@
         <eureka.starter.version>1.4.2.RELEASE</eureka.starter.version>
     </properties>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+    </dependencies>
+
     <!-- 此项配置的意思是：pom.xml中的parent引用，可以引用我们自己项目的parent，而不是springcloud的parent。方便项目模块的扩展和管理。必须配置在dependencyManagement节点中 -->
     <dependencyManagement>
         <dependencies>

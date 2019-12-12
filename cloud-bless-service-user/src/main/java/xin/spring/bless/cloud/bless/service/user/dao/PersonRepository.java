@@ -8,4 +8,10 @@ import xin.spring.bless.cloud.bless.service.user.entity.Person;
 public interface PersonRepository extends JpaRepository<Person, Integer> {
 
 
+    /**
+     * 通过邮箱查询
+     * @param mail
+     * @return
+     */
+    Person findByMail(String mail);
 }
