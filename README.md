@@ -152,3 +152,7 @@ rabbitmq目前只用在配置中心，实现动态刷新spring bean，建议安�
 
 #### 项目动态
 > 目前项目中只有这几样技术内容，涉及到多数springcloud的技术，后面会根据自己所学，一点点的积累，基础学习之后再进行深入的研究学习，并在项目中更新并分享给大家。
+
+
+
+![122344](https://raw.githubusercontent.com/ME-liuchunfu/cloud-spring-bless/master/1234.png)
